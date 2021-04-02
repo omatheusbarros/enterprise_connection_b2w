@@ -1,0 +1,316 @@
+/* #region Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+/* #endregion */
+
+/* #region Root */
+
+:root {
+    --text-primary: #F2C94C;
+    --text-secondary: #FFF;
+    --text-tertiary: #333;
+}
+
+/* #endregion */
+
+/* #region Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* #endregion */
+
+/* #region Framework */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex { display: flex; }
+.column { flex-direction: column; }
+.space_between { justify-content: space-between; }
+.space_around { justify-content: space-around; }
+.align_center { align-items: center; }
+ul { list-style-type: none; }
+
+/* #endregion */
+
+/* #region Header */
+
+header {
+    height: 106px;
+}
+
+.header {
+    height: 100%;
+    align-items: center;
+}
+
+.input_search {
+    width: 518px;
+    height: 42px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding-right: 12px;
+}
+
+input[type='search'] {
+    font-family: 'Inter';
+    border: 0;
+    width: 95%;
+    height: 100%;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.input_search > i {
+    color: #2D9CDB;
+    font-size: 18px;
+}
+
+.menu li:nth-of-type(2) {
+    margin-left: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--text-tertiary);
+}
+
+/* #endregion */
+
+/* #region Main */
+
+main {
+    height: calc(100vh + 106px);
+    background-image: url('../images/backgrounds/fundo_peakyblinders.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    /* #region Content */
+
+    .content {
+        margin-top: 16px;
+    }
+
+        /* #region Breadcrumb */
+
+        .breadcrumb {
+            margin-top: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* #endregion */
+
+        /* #region Nav */
+
+        nav {
+            margin-top: 36px;
+        }
+
+        nav ul li {
+            margin-bottom: 39px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-secondary);
+        }
+
+        nav ul li i {
+            font-size: 16px;
+        }
+
+        nav ul li span {
+            margin-left: 32px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        /* #endregion */
+
+        /* #region Article Movie Series */
+
+        article.movieseries_article {
+            margin-top: 36px;
+            width: 873px;
+        }
+
+        article.movieseries_article section#backtothefuture_home,
+        article.movieseries_article section#eatpraylove_home {
+            display: none;
+        }
+
+        article.movieseries_article h2 {
+            color: var(--text-primary);
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        article.movieseries_article p {
+            font-size: 18px;
+            margin-top: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            line-height: 140%;
+        }
+
+        article.movieseries_article .cards {
+            margin-top: 24px;
+        }
+
+        article.movieseries_article .card p {
+            margin-top: 24px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+        }
+
+        article.movieseries_article .card button {
+            outline: none;
+            cursor: pointer;
+            margin-top: 24px;
+            width: 200px;
+            height: 42px;
+            border-radius: 8px;
+            background-color: var(--text-primary);
+            border: 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-tertiary);
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+
+        article.movieseries_article .card button:hover {
+            background-color: #222;
+            border: 1px solid var(--text-primary);
+            color: var(--text-primary);
+            box-shadow: 1px 2px 8px var(--text-primary);
+        }
+
+        /* #endregion */
+
+        /* #region Article Tourist Spot */
+
+        .tourist_spot_page {
+            display: none;
+        }
+
+        article.touristspot_article section {
+            display: none;
+        }
+
+        .page_back {
+            margin-top: 10px;
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .touristspot_maincontent {
+            margin-top: 36px;
+        }
+
+        .touristspot_maincontent img {
+            width: 300px;
+            height: 100%;
+        }
+
+        .touristspot_info {
+            width: 785px;
+        }
+
+        .touristspot_description h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .touristspot_description p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-top: 13px;
+        }
+
+        .touristspot_util {
+            margin-top: 50px;
+            background: inherit;
+            padding: 20px;
+            height: 170px;
+            position: relative;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .touristspot_util:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .2);
+            filter: blur(10px);
+            margin: -20px;
+        }
+
+        .touristspot_utilitems p {
+            filter: blue(0);
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .touristspot_evaluation {
+            text-align: right;
+        }
+
+        .touristspot_evaluation small {
+            color: var(--text-secondary);
+        }
+
+        .touristspot_evaluation i {
+            color: var(--text-primary);
+        }
+
+        .touristspot_visuals {
+            margin-top: 50px;
+        }
+
+        .touristspot_visuals h2 {
+            color: var(--text-primary);
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .touristspot_images {
+            margin-top: 32px;
+        }
+
+        .touristspot_images img {
+            width: 250px;
+        }
+
+        /* #endregion */
+
+    /* #endregion */
+
+/* #endregion */

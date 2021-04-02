@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Traveller</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header flex space_between">
+            <img class="logo" src="./images/header/Logo_Traveller.svg" alt="logo Traveller">
+            <div class="input_search flex space_between align_center">
+                <input type="search" name="pesquisa" id="pesquisa" placeholder="Buscar ponto turístico">
+                <i class="fas fa-search-location"></i>
+            </div> <!-- input_search -->
+            <ul class="menu flex row">
+                <li><a href="">Minha conta</a></li>
+                <li><a href="">Notificações</a></li>
+            </ul> <!-- menu -->
+        </div> <!-- container -->
+    </header>
+
+    <main>
+        <div class="container flex column">
+            <div class="movies_series_page">
+                <div class="breadcrumb">
+                    <small>
+                        Home > Matérias > <strong>Veja os pontos turisticos dos filmes e séries</strong>
+                    </small>
+                </div> <!-- breadcrumb -->
+
+                <div class="content flex space_between">
+                    <nav>
+                        <ul>
+                            <li><a href="" menu="pb" realtime="#peakyblinders_home"><i class="fas fa-circle"></i><span>Peaky Blinders</span></a></li>
+                            <li><a href="" menu="btf" realtime="#backtothefuture_home"><i class="fas fa-circle"></i><span>Back to the Future</span></a></li>
+                            <li><a href="" menu="cra" realtime="#eatpraylove_home"><i class="fas fa-circle"></i><span>Eat Pray Love</span></a></li>
+                        </ul>
+                    </nav>
+
+                    <article class="movieseries_article">
+                        <section id="peakyblinders_home"> <!-- Peaky Blinders -->
+                            <h2>Peaky Blinders</h2>
+                            <p>
+                                Peaky Blinders é uma série de televisão britânica baseada em um conto épico de uma família gângster ambientado em Birmingham, na Inglaterra, em 1919, logo após a Primeira Guerra Mundial. A família é notadamente conhecida por ter navalhas costuradas em seus chapéus, além de estar envolvida em um esquema ilegal de apostas em corridas de cavalos. Inspirada nos eventos e história da associação criminosa de Birmingham de mesmo nome, a série foi criada por Steven Knight e produzida por Caryn Mandabach Productions e Tiger Aspect Productions.
+                            </p>
+                            <div class="cards flex space_between">
+                                <div class="card flex column">
+                                    <img src="./images/PB/museum.png" alt="Birmingham Museum">
+                                    <p>Birmingham Museum</p>
+                                    <button pontoturistico="#birmingham_museum">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/PB/catedral.png" alt="Catedral de São Filipe">
+                                    <p>Catedral de São Filipe</p>
+                                    <button pontoturistico="#catedral_saofilipe">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/PB/praca.png" alt="Praça Victoria Square">
+                                    <p>Praça Victoria Square</p>
+                                    <button pontoturistico="#praca_victoriasquare">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                            </div> <!-- cards -->
+                        </section> <!-- peakyblinder_home -->
+
+                        <section id="backtothefuture_home"> <!-- Back to the Future -->
+                            <h2>Back to the Future</h2>
+                            <p>
+                                Back to the Future é uma série de filmes de comédia de aventura e ficção científica escrita por Robert Zemeckis e Bob Gale, dirigida por Zemeckis e produzida por Gale e Neil Canton para a Amblin Entertainment de Steven Spielberg e distribuída pela Universal Pictures.
+                            </p>
+                            <div class="cards flex space_between">
+                                <div class="card flex column">
+                                    <img src="./images/BTF/bk.png" alt="Burger King da Victory Boulevard">
+                                    <p>Burger King da Victory Boulevard</p>
+                                    <button pontoturistico="#burgerking_victoryboulevard">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/BTF/le.png" alt="Lyon Estates">
+                                    <p>Lyon Estates</p>
+                                    <button pontoturistico="#lyon_estates">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/BTF/hillv.png" alt="A praça da Corte Judicial da cidade de Hill Valley">
+                                    <p>Praça da Corte Judicial de Hill Valley</p>
+                                    <button pontoturistico="#cortejudicial_hillvalley">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                            </div> <!-- cards -->
+                        </section> <!-- backtothefuture_home -->
+
+                        <section id="eatpraylove_home"> <!-- Eat Pray Love -->
+                            <h2>Comer, Rezar, Amar</h2>
+                            <p>
+                                Comer, Rezar, Amar é um best-seller americano com mais de quatro milhões de cópias vendidas, escrito pela jornalista e escritora Elizabeth Gilbert. Na história, ela relata as suas experiências reais vividas na Itália, Índia e Indonésia, em busca de autoconhecimento, após uma crise existencial e um longo e doloroso divórcio. O livro deu origem ao filme Comer, Rezar, Amar, de 2010, com Julia Roberts no papel principal.
+                            </p>
+                            <div class="cards flex space_between">
+                                <div class="card flex column">
+                                    <img src="./images/CRA/Pancrazio.png" alt="Ristorante Da Pancrazio">
+                                    <p>Ristorante Da Pancrazio</p>
+                                    <button pontoturistico="#ristorante_dapancrazio">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/CRA/ashram.png" alt="Ashram Hari Mandir">
+                                    <p>Ashram Hari Mandir</p>
+                                    <button pontoturistico="#ashram_hari_mandir">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                        
+                                <div class="card flex column">
+                                    <img src="./images/CRA/padang.png" alt="Praia de Padang-Padang">
+                                    <p>Praia de Padang-Padang</p>
+                                    <button pontoturistico="#padang_padang">Ver detalhes do local</button>
+                                </div> <!-- card -->
+                            </div> <!-- cards -->
+                        </section> <!-- eatpraylove_home -->
+                    </article>
+                </div> <!-- content -->
+            </div> <!-- movies_series_page -->
+
+            <div class="tourist_spot_page">
+                <div class="content">
+                    <article class="touristspot_article">
+                        <section id="birmingham_museum"> <!-- Birmingham Museum -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#peakyblinders_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/PB/Museum1.png" alt="Birmingham Museum">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Birmingham Museum</h2>
+                                            <p>
+                                                Fundado em 1885, o Birmingham Museum and Art Gallery possui uma coleção de importância internacional que abrange obras de arte, cerâmica, trabalho em metal, joalharia, história natural, arqueologia, etnografia, história local e história industrial. A coleção diversificada de antiguidades inclui moedas da Antiguidade até a Idade Média, artefatos da Índia antiga e Ásia Central, Chipre antigo e antigo Egito. Há material da Grécia Clássica, do Império Romano e da América Latina.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Chamberlain Square, Birmingham B3 3DH, Reino Unido</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Indiferente</p>
+                                                <p><strong>Telefone: </strong>+44 121 348 8032</p>
+                                                <p><strong>Horário de funcionamento: </strong>sábado a quinta das 10h às 17h</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/PB/Museum2.png" alt="Birmingham Museum">
+                                                <img src="./images/PB/Museum3.png" alt="Birmingham Museum">
+                                                <img src="./images/PB/Museum4.png" alt="Birmingham Museum">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- birmingham_museum -->
+
+                        <section id="catedral_saofilipe"> <!-- Catedral de São Filipe -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#peakyblinders_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                        
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/PB/catedral1.png" alt="Catedral de São Filipe">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Catedral de São Filipe</h2>
+                                            <p>
+                                                A Catedral de São Felipe é a principal igreja de Birmingham e foi construída entre 1710 e 1725 em estilo barroco. O interior retangular do corredor da igreja tem corredores separados da nave por pilares estriados de forma clássica com capitais toscanos que suportam uma arcada encimada por uma cornisa fortemente projetada.
+                                                Durante a Segunda Guerra Mundial, a catedral foi bombardeada e destruída em 7 de novembro de 1940. O edifício passou por uma ampla restauração em 1948, após o término da guerra.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>55 Temple Row</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Indiferente</p>
+                                                <p><strong>Telefone: </strong>0121 262 1840</p>
+                                                <p><strong>Horário de funcionamento: </strong>segunda a sexta das 7h30 às 18h30</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/PB/catedral2.png" alt="Catedral de São Filipe">
+                                                <img src="./images/PB/catedral3.png" alt="Catedral de São Filipe">
+                                                <img src="./images/PB/catedral4.png" alt="Catedral de São Filipe">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- catedral_saofilipe -->
+
+                        <section id="praca_victoriasquare"> <!-- Praça Victoria Square -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#peakyblinders_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                        
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/PB/praca1.png" alt="Praça Victoria Square">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Praça Victoria Square</h2>
+                                            <p>
+                                                Victoria Square é uma das principais praças de Birmingham, o marco zero da cidade e onde está localizada a Prefeitura. O nome da praça é uma homenagem à rainha Victoria e há uma grande estátua dela na área central. Até o final do século XX, a área era um cruzamento de diversas ruas. Foram feitos planos tornar o local em um espaço para a circulação de pedestres. A construção da praça começou em 1992 e foi concluída em 1994, quando foi oficialmente aberta por Diana, a Princesa de Gales.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>1 Hill St, Birmingham</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Dezembro, Natal</p>
+                                                <p><strong>Telefone: </strong>0121 262 1840</p>
+                                                <p><strong>Horário de funcionamento: </strong>Segunda a Sexta das 08h às 18h</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/PB/praca2.png" alt="Praça Victoria Square">
+                                                <img src="./images/PB/praca3.png" alt="Praça Victoria Square">
+                                                <img src="./images/PB/praca4.png" alt="Praça Victoria Square">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- praca_victoriasquare -->
+
+                        <section id="burgerking_victoryboulevard"> <!-- Burger King Victory Boulevard -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#backtothefuture_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/BTF/bk1.png" alt="Burger King da Victory Boulevard">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Burger King da Victory Boulevard</h2>
+                                            <p>
+                                                A locação mais rotineira de toda a série nos anos 1980: o Burger King. Marty passa de skate em seu caminho para a casa de Doc, no Victory Boulevard, em Burbank. Não muito do filme foi filmado lá, mas Burbank, com seus pitorescos shoppings nostálgicos e casas humildes, mas incrivelmente caras, para criar sua família nuclear anacrônica, é o local de nascimento de Marty McFly e da mítica classe média de Walt Disney.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                            
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Universal Blvd, Orlando, FL 32819, Estados Unidos</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Primavera</p>
+                                                <p><strong>Telefone: </strong>+1 407-363-8000</p>
+                                                <p><strong>Horário de funcionamento: </strong>08:00 às 19:00</p>
+                                            </div> <!-- touristspot_utilitems -->
+                            
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                            
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/BTF/bk2.png" alt="Burger King da Victory Boulevard">
+                                                <img src="./images/BTF/bk3.png" alt="Burger King da Victory Boulevard">
+                                                <img src="./images/BTF/bk4.png" alt="Burger King da Victory Boulevard">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- burgerking_victoryboulevard -->
+                        
+                        <section id="lyon_estates"> <!-- Lyon Estates -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#backtothefuture_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/BTF/le1.png" alt="Lyon Estates">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Lyon Estates</h2>
+                                            <p>
+                                                Lyon Estates foi uma subdivisão desenvolvida por volta de 1955, localizada a 3 km ao sul do centro de Hill Valley . Marty McFly morou aqui em 1985 antes de se mudar para Hilldale.
+                                                
+                                                Ficava no mesmo lado da cidade que o Twin Pines Mall, anteriormente Twin Pines Ranch, conectado presumivelmente por uma rodovia com cerca de um quilômetro de distância no extremo sul da cidade. 
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                            
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Universal Blvd, Orlando, FL 32819, Estados Unidos</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Primavera</p>
+                                                <p><strong>Telefone: </strong>+1 407-363-8000</p>
+                                                <p><strong>Horário de funcionamento: </strong>08:00 às 19:00</p>
+                                            </div> <!-- touristspot_utilitems -->
+                            
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                            
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/BTF/le2.png" alt="Lyon Estates">
+                                                <img src="./images/BTF/le3.png" alt="Lyon Estates">
+                                                <img src="./images/BTF/le4.png" alt="Lyon Estates">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- lyon_estates -->
+                        
+                        <section id="cortejudicial_hillvalley"> <!-- Conte Judicial Hill Valley -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#backtothefuture_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/BTF/hillv1.png" alt="Praça da Corte Judicial da cidade de Hill Valley">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Praça da Corte Judicial de Hill Valley</h2>
+                                            <p>
+                                                Courthouse Square é um backlot localizado no Universal Studios Lot em Universal City, Califórnia. O conjunto é composto por várias fachadas que formam uma praça da cidade americana arquetípica com um tribunal como peça central.
+                            
+                                                Antes a área era conhecida como Mockingbird Square devido ao seu papel no filme To Kill a Mockingbird. Foi severamente danificado por um incêndio várias vezes, incluindo em 1957, 1990 e 2008. Foi reconstruído após cada incidente.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                            
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Universal Blvd, Orlando, FL 32819, Estados Unidos</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Primavera</p>
+                                                <p><strong>Telefone: </strong>+1 407-363-8000</p>
+                                                <p><strong>Horário de funcionamento: </strong>08h às 19h</p>
+                                            </div> <!-- touristspot_utilitems -->
+                            
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                            
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/BTF/hillv2.png" alt="Praça da Corte Judicial da cidade de Hill Valley">
+                                                <img src="./images/BTF/hillv3.png" alt="Praça da Corte Judicial da cidade de Hill Valley">
+                                                <img src="./images/BTF/hillv4.png" alt="Praça da Corte Judicial da cidade de Hill Valley">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- cortejudicial_hillvalley -->
+                        
+                        <section id="ristorante_dapancrazio"> <!-- Ristorante Da Pancrazio -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#eatpraylove_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/CRA/pancrazio1.png" alt="Ristorante Da Pancrazio">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Ristorante Da Pancrazio</h2>
+                                            <p>
+                                                Se você faz parte do fã clube que adora novas experiências gastrômicas, esse filme apresenta boa opção para você!
+                        
+                                                Localizado em Roma, o restaurante Da Pancrazio oferece uma típica massa italiana e um ambiente mais formal.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Piazza del Biscione 91, 00186, Roma, Itália</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Inverno</p>
+                                                <p><strong>Telefone: </strong>+39 066861246</p>
+                                                <p><strong>Horário de funcionamento: </strong>18h às 22h</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/CRA/pancrazio2.png" alt="Ristorante Da Pancrazio">
+                                                <img src="./images/CRA/pancrazio3.png" alt="Ristorante Da Pancrazio">
+                                                <img src="./images/CRA/pancrazio4.png" alt="Ristorante Da Pancrazio">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- ristorante_dapancrazio -->
+
+                        <section id="ashram_hari_mandir"> <!-- Ashram Hari Mandir -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#eatpraylove_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/CRA/ashram1.png" alt="Ashram Hari Mandir">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Ashram Hari Mandir</h2>
+                                            <p>
+                                                O local escolhido para a seção “Rezar” do filme acontece na cidade de Pataudi, Índia. A busca por autoconhecimento é através do serviço altruísta, chamado “seva”. Em troca do ensinamento espiritual, ela faz limpeza no local, faz voto de silêncio e outros. 
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Pataudi, Haryana 122503, Índia</p>
+                                                <p><strong>Preço: </strong>Contribuição voluntária para manutenção do local</p>
+                                                <p><strong>Melhor época para visitar: </strong>Indiferente</p>
+                                                <p><strong>Telefone: </strong>+91 124 267 2508</p>
+                                                <p><strong>Horário de funcionamento: </strong>06h às 18h</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/CRA/ashram2.png" alt="Ashram Hari Mandir">
+                                                <img src="./images/CRA/ashram3.png" alt="Ashram Hari Mandir">
+                                                <img src="./images/CRA/ashram4.png" alt="Ashram Hari Mandir">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- ashram_hari_mandir -->
+
+                        <section id="padang_padang"> <!-- Praia de Padang-Padang -->
+                            <div class="flex column">
+                                <div class="page_back">
+                                    <span realtimevoltar="#eatpraylove_home"><i class="fas fa-chevron-left"></i> Voltar</span>
+                                </div> <!-- page_back -->
+                                
+                                <div class="touristspot_maincontent flex space_between">
+                                    <img src="./images/CRA/padang1.png" alt="Praia de Padang-Padang">
+                                    
+                                    <div class="touristspot_info flex column space_between">
+                                        <div class="touristspot_description">
+                                            <h2>Praia de Padang-Padang</h2>
+                                            <p>
+                                                Liz vai para a Indonésia para a última etapa da viagem, onde se apaixona por Felipe. Ubud e a praia de Padang-Padang, em Bali, são os principais locais de filmagem da Indonésia. Os belos arrozais onde Liz é vista andando de bicicleta é o Tegallalang Rice Terrace. Liz e Felipe também aproveitam um passeio pelo vibrante e movimentado mercado local, que na verdade é o Mercado de Ubud, também conhecido como Pasar Seni. Ele está localizado em frente ao famoso Palácio de Ubud.
+                                            </p>
+                                        </div> <!-- touristspot_description -->
+                        
+                                        <div class="touristspot_util flex space_between">
+                                            <div class="touristspot_utilitems flex column space_between">
+                                                <p><strong>Endereço: </strong>Pecatu, South Kuta, Badung Regency, Bali, Indonésia</p>
+                                                <p><strong>Preço: </strong>Gratuito</p>
+                                                <p><strong>Melhor época para visitar: </strong>Verão</p>
+                                                <p><strong>Telefone: </strong>--</p>
+                                                <p><strong>Horário de funcionamento: </strong>O dia todo</p>
+                                            </div> <!-- touristspot_utilitems -->
+                        
+                                            <div class="touristspot_evaluation">
+                                                <small>Avaliação</small>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div> <!-- stars -->
+                                            </div> <!-- touristspot_evaluation -->
+                                        </div> <!-- touristspot_util -->
+                        
+                                        <div class="touristspot_visuals flex column">
+                                            <h2>Veja mais fotos do local</h2>
+                                            <div class="touristspot_images flex space_between">
+                                                <img src="./images/CRA/padang2.png" alt="Praia de Padang-Padang">
+                                                <img src="./images/CRA/padang3.png" alt="Praia de Padang-Padang">
+                                                <img src="./images/CRA/padang4.png" alt="Praia de Padang-Padang">
+                                            </div> <!-- touristspot_images -->
+                                        </div> <!-- touristspot_visuals -->
+                                    </div> <!-- touristspot_info -->
+                                </div> <!-- touristspot_maincontent -->
+                            </div>
+                        </section> <!-- padang_padang -->
+                    </article>
+                </div> <!-- content -->
+            </div> <!-- trourist_spot_page -->
+        </div> <!-- container -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
